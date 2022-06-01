@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js" defer></script>
+
+    <title>Notes</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="notes">
+        <div class="note">
+          <div class="toolbar">
+            <button class="btn-tool" id="btnEdit">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+  
+            <button class="btn-tool" id="btnDelete">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
+  
+          <div class="text">
+            <div id="textMd hidden">
+  
+            </div>
+            <textarea id="textNote"></textarea>
+          </div>
+        </div>
+      </div>
+        
+
+      <div class="side-tools">
+        <button class="btn-side" id="btnAdd">
+          <i class="fa-solid fa-plus"></i>
+          New note
+        </button>
+        <button class="btn-side" id="btnDeleteAll">
+          <i class="fa-solid fa-trash-can"></i>
+          Delete all
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
